@@ -60,7 +60,7 @@
 
 	 <feature name="ajpush">
 		 <param name="app_key" value="0bc95c7bd823627ebcb13e3f" />
-		 <param name="channel" value="your channel" />
+		 <param name="channel" value="0bc95c7bd823627ebcb13e3f" />
 	 </feature>
 
 </widget>
