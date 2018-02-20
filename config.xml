@@ -1,6 +1,6 @@
  <widget id="A6064677886872"  version="0.0.1">
 
-    <name>vue示例</name>
+    <name>jymsmobile</name>
 
     <description>
 
@@ -57,6 +57,11 @@
 	<permission name="bootCompleted" />
 
 	<permission name="hardware" />
+
+	 <feature name="ajpush">
+		 <param name="app_key" value="0bc95c7bd823627ebcb13e3f" />
+		 <param name="channel" value="your channel" />
+	 </feature>
 
 </widget>
 

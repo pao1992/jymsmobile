@@ -1,5 +1,7 @@
 <template>
     <div>
+        <p>sdfsdfsdf</p>
+        <div>{{data}}</div>
         <ul v-if="dataHasLoaded">
             <li>引擎版本信息: {{ver}}</li>
             <li>系统类型: {{sType}}</li>
@@ -22,7 +24,8 @@
     export default {
         data() {
             return {
-                dataHasLoaded: false
+                dataHasLoaded: false,
+                data:{}
             }
         },
         created() {
@@ -40,6 +43,22 @@
             this.frameWidth = api.frameWidth || '';
             this.frameHeight = api.frameHeight || '';
             this.dataHasLoaded = true;
+            this.initData()
+        },
+        methods:{
+            initData(){
+                var ajpush = api.require('ajpush');
+                console.log('sdfsdf')
+                console.log(ajpush)
+
+//                ajpush.init(function(ret) {
+//                    this.data = ret;
+//                    if (ret && ret.status){
+//                        //success
+//
+//                    }
+//                });
+            }
         }
     }
 </script>
