@@ -59,9 +59,8 @@
 	<permission name="hardware" />
 
 	 <feature name="ajpush">
-		 <param name="app_key" value="0bc95c7bd823627ebcb13e3f" />
-		 <param name="channel" value="0bc95c7bd823627ebcb13e3f" />
+		 <param name="app_key" value="b33bf22e431cf2b88626e26a" />
+		 <param name="channel" value="sd" />
 	 </feature>
 
 </widget>
-

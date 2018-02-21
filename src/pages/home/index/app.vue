@@ -25,7 +25,7 @@
         data() {
             return {
                 dataHasLoaded: false,
-                data:{}
+                data: {}
             }
         },
         created() {
@@ -45,19 +45,37 @@
             this.dataHasLoaded = true;
             this.initData()
         },
-        methods:{
+        methods: {
             initData(){
-                var ajpush = api.require('ajpush');
-                console.log('sdfsdf')
-                console.log(ajpush)
+                var that = this;
+                var ajpush = null;
+                ajpush = api.require('ajpush');
 
-//                ajpush.init(function(ret) {
-//                    this.data = ret;
-//                    if (ret && ret.status){
-//                        //success
-//
-//                    }
-//                });
+                ajpush.init(function(ret, err){
+                    if(ret && ret.status){
+                        alert('操作成功!');
+                    }else{
+                        alert('操作失败!');
+                    }
+                });
+                ajpush.setListener(
+                        function(ret) {
+                            var id = ret.id;
+                            var title = ret.title;
+                            var content = ret.content;
+                            var extra = ret.extra;
+                        }
+                );
+
+            },
+            getPush(){
+
+            },
+            onPause(){
+
+            },
+            onResume(){
+
             }
         }
     }
