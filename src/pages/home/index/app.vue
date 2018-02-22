@@ -48,73 +48,8 @@
         },
         methods: {
             initData(){
-//                var that = this;
-//                ajpush.init(function(ret, err){
-//                    if(ret && ret.status){
-//                        alert('操作成功!');
-//                    }else{
-//                        alert('操作失败!');
-//                    }
-//                });
-//                ajpush.setListener(
-//                        function(ret) {
-//                            var id = ret.id;
-//                            var title = ret.title;
-//                            var content = ret.content;
-//                            var extra = ret.extra;
-//                            that.data = id+title+content;
-//                        }
-//                );
-//                ajpush.getRegistrationId(function(ret) {
-//                    var registrationId = ret.id;
-//                    console.log(registrationId)
-//                });
-//                ajpush.stopPush(function(ret) {
-//                    if(ret && ret.status){
-//                        console.log('停止发送')
-//                    }
-//                });
-//                ajpush.isPushStopped(function(ret) {
-//                    if(ret && ret.isStopped){
-//                        console.log('服务已停止')
-//                    }
-//                });
-//                ajpush.resumePush(function(ret) {
-//                    if(ret && ret.status){
-//                        console.log('恢复发送')
-//                        //success
-//                    }
-//                });
-//                api.addEventListener({name:'resume'}, function(ret,err) {
-//                    console.log('恢复到前台');
-//                    ajpush.onResume();
-//                });
-//                api.addEventListener({name:'pause'}, function(ret,err) {
-//                    console.log('切换到后台');
-//                    ajpush.onPause();
-//                });
-////                ajpush.setListener(
-////                        function(ret) {
-//////                            var id = ret.id;
-//////                            var title = ret.title;
-//////                            var content = ret.content;
-//////                            var extra = ret.extra;
-////                            that.data = ret.id+'/'+ret.content
-////                            console.log(that.data)
-////                        }
-////                );
-//                ajpush.removeListener();
 
             },
-            getPush(){
-
-            },
-            onPause(){
-
-            },
-            onResume(){
-
-            }
         }
     }
 </script>
